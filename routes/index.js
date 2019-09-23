@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 });
 
 //增
-router.get('/goodAdd',function(req,res,next){
+router.post('/goodAdd',function(req,res,next){
 	goodlist.goodadd(req,res,next);
 });
 
@@ -20,6 +20,7 @@ router.get('/goodDel',function(req,res,next){
 });
 //改
 router.get('/goodUpdate',function(req,res,next){
+
 	goodlist.goodupdate(req,res,next);
 });
 //查

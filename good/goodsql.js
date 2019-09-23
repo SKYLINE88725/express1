@@ -1,13 +1,14 @@
 var good={
 	//增
-	goodinsert:'INSERT INTO `good` (`id`,`name`,`desc`,`price`,`sum`) VALUES(0,?,?,?,?)',
+	goodinsert:'INSERT INTO `list` (`id`,`name`,`phone`,`school`,`major`,`type`,`time`) VALUES(?,?,?,?,?,?,?)',
 	//删
-	gooddelete: 'delete from good where id=?',
+	gooddelete: 'delete from list where id=?',
 	//改
-	goodupdate:'UPDATE `good` SET `name`=?,`desc`=?,`price`=?,`sum`=? WHERE `id`=?',
+	goodupdate:'UPDATE `list` SET `name`=?,`phone`=?,`school`=?,`majar`=?,`time`=? WHERE `id`=?',
     //查
-    goodAll: 'select * from good',
-    goodById: 'select * from good where id=?'
+    goodAll1: 'SELECT * FROM list where  `type`=?  order by `id` desc',
+    goodAll2: 'SELECT * FROM list order by `id` desc',
+    goodById: 'select * from list where id=?'
 }
 
 module.exports=good;

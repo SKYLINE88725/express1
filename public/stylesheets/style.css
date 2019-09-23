@@ -6,3 +6,33 @@ body {
 a {
   color: #00B7FF;
 }
+.title{
+  text-align: center;
+  margin:20px auto;
+
+}
+table.list {
+  font-family: verdana,arial,sans-serif;
+  font-size:11px;
+  color:#333333;
+  width:100%;
+  border-width: 1px;
+  border-color: #666666;
+  border-collapse: collapse;
+}
+table.list th {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #dedede;
+}
+table.list td {
+  border-width: 1px;
+  padding: 8px;
+  text-align: center;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #ffffff;
+}
+
